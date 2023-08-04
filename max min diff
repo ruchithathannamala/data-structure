@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+int A[100],i,n,max,min,diff;
+printf("enter the size of the array");
+scanf("%d",&n);
+printf("enter the value of array");
+for(i=0;i<n;i++)
+scanf("%d",&A[i]);
+max=A[0];
+min=A[0];
+for(i=0;i<n;i++)
+{
+if(A[i]>max)
+max=A[i];
+if(A[i]<min)
+min=A[i];
+}
+ diff=max-min;
+ printf("\n the max=%d",max);
+ printf("\n the min=%d",min);
+ printf("the difference between max and min is %d",diff);
+ return 0;
+}
